@@ -1,0 +1,20 @@
+#gameBoard {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  background-color: black;
+  width: 324px;
+  gap: 12px;
+}
+
+#gameBoard span {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+}
+
+#gameBoard span.win {
+  background-color: seagreen;
+}

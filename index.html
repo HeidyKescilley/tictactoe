@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h1>Jogo da Velha</h1>
+      <hr />
+    </section>
+    <section>
+      <h2>Jogadores</h2>
+      <form id="playersForm">
+        <input
+          type="text"
+          name="player1"
+          id="player1"
+          placeholder="Jogador 1"
+        />
+        <input
+          type="text"
+          name="player2"
+          id="player2"
+          placeholder="Jogador 2"
+        />
+        <button type="button" id="startBtn">começar</button><br /><br />
+      </form>
+      <h3>
+        Vez do(a):
+        <ul id="turnCurrent"></ul>
+      </h3>
+    </section>
+    <section id="gameBoard">
+      <span data-region="0.0"></span>
+      <span data-region="0.1"></span>
+      <span data-region="0.2"></span>
+      <span data-region="1.0"></span>
+      <span data-region="1.1"></span>
+      <span data-region="1.2"></span>
+      <span data-region="2.0"></span>
+      <span data-region="2.1"></span>
+      <span data-region="2.2"></span>
+    </section>
+  </body>
+</html>
